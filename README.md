@@ -274,17 +274,6 @@ jupyter notebook
 
 Educational project - Microsoft Elevate Internship Program
 
-## 👥 Contributors
-
-Developed as an AI/ML document compliance auditing demonstration.
-
----
-
-**Status:** ✅ **Fully Functional** - Ready for testing!
-
-**Version:** 1.0.0  
-**Updated:** February 2026
-
 ### Quick Start
 
 **Terminal 1 - Backend:**

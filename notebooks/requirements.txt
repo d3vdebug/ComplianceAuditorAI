@@ -1,0 +1,24 @@
+# Python Dependencies for Document Compliance Audit System
+
+# Core data processing
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Machine Learning
+scikit-learn>=1.2.0
+
+# Document processing
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+
+# Data visualization
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Jupyter support
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.20.0
+
+# Optional: Additional utilities
+python-dateutil>=2.8.0

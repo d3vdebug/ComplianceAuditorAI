@@ -1,0 +1,123 @@
+╔══════════════════════════════════════════════════════════════════╗
+║         DOCUMENT COMPLIANCE AUDIT SYSTEM - QUICK START          ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📍 PROJECT LOCATION:
+   G:\Programming\Microsoft Elevate Internship Project
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 START THE APP (2 TERMINALS REQUIRED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TERMINAL 1 - BACKEND:
+  cd backend
+  python app.py
+  
+  ✅ Should see: "Server running on: http://localhost:5000"
+  ⚠️  KEEP RUNNING!
+
+TERMINAL 2 - FRONTEND:
+  cd frontend
+  npm start
+  
+  ✅ Opens browser at: http://localhost:3000
+  ⚠️  KEEP RUNNING!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📤 UPLOAD & TEST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open http://localhost:3000
+2. Drag & drop file (or click to browse)
+3. Select document type
+4. Click "Run Compliance Audit"
+5. View results in seconds!
+
+TEST FILES PROVIDED:
+  📄 sample_test_contract.txt         → Score: 85-95 ✅
+  📄 sample_incomplete_agreement.txt  → Score: 30-50 ❌
+  📄 sample_privacy_policy.txt        → Score: 90-100 ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 FILE REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Formats: PDF, DOCX, DOC, TXT
+✅ Max Size: 16 MB
+✅ PDFs: Text-based only (not scanned images)
+✅ Encoding: UTF-8 for text files
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔍 COMPLIANCE CHECKS (7 TOTAL)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ✓ Date Information
+2. ✓ Signature Terms  
+3. ✓ Contact Information
+4. ✓ Document-Specific Terms
+5. ✓ Document Completeness (100+ words)
+6. ✓ Prohibited Content Scan
+7. ✓ Legal Terminology
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 SCORING SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+90-100  ✅ Excellent   (All checks passed)
+75-89   👍 Good        (1-2 issues)
+60-74   ⚠️  Acceptable  (Several issues)
+0-59    ❌ Needs Work  (Major issues)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: Backend won't start
+Fix: cd backend
+     pip install flask flash-cors werkzeug PyPDF2 python-docx
+     python app.py
+
+Problem: Frontend shows error
+Fix: • Check backend is running (Terminal 1)
+     • Verify http://localhost:5000/api/health works
+     • Restart both servers
+
+Problem: File upload fails  
+Fix: • Check file size < 16MB
+     • Ensure correct format (PDF/DOCX/TXT)
+     • Use text-based PDFs, not scans
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌐 URLS & ENDPOINTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Frontend:      http://localhost:3000
+Backend API:   http://localhost:5000
+Health Check:  http://localhost:5000/api/health
+Statistics:    http://localhost:5000/api/stats
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 HIGH SCORE TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Include these for best results:
+  • Dates: "January 15, 2024" or "01/15/2024"
+  • Signatures: "Signed", "Executed by"
+  • Email: email@company.com
+  • Phone: (555) 123-4567
+  • Terms: "agreement", "party", "terms"
+  • Legal: "hereby", "whereas", "pursuant"
+  • Length: 200+ words
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+README.md           → Full project documentation
+PROJECT_COMPLETE.md → Comprehensive setup guide
+QUICKSTART.md       → Detailed quick start
+backend/README.md   → API documentation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ PROJECT STATUS: 100% COMPLETE & READY TO USE! ✨
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
